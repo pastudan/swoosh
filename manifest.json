@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Swoosh",
+    "description": "The Swoosh Chrome extension lets you browse the web normally and autmomatically save downloaded files to your SD slot.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/"
+    ],
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": true
+    }
+}
